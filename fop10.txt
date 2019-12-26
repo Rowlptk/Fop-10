@@ -1,0 +1,18 @@
+Rahul Pathak
+BE electronics & communication
+2 years ==> FOP
+github ==> link ==> codes folder
+
+user
+
+flowchart ==> 1
+c-programming ==> 12
+HTML CSS javaScript ==> 13
+BootStrap ==> 4
+jQuery ==> 1
+AngularJs ==> 2
+SQL ==> 4 days
+
+12 * 3 ==> 36 days
+
+
