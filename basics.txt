@@ -1,0 +1,36 @@
+https://github.com/Rowlptk/Fop-10
+
+computer ==> input ==> process ==> output
+
+2 2 ==> add ==> 4
+data	operation information
+
+Programming vs Programming Language
+
+set of instructions
+
+C , c++, java, python, php, ...
+
+printf, system.out.println, print, console.log, document.
+
+Algorithm:
+
+sequence of instruction
+
+1. Flowchart ==> Symbols
+2. pseudocode ==> false code
+
+online diagram software ==> draw.io
+
+
+
+
+
+
+
+
+
+
+
+
+
