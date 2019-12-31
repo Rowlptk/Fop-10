@@ -1,0 +1,185 @@
+
+Data Types:
+
+int   ==> +ve , 0 ,-ve  eg. -100, 0,999,6
+
+==> short int ==> memory space(2 bytes) ==> range (-32,768 to 32,767)
+
+0100110011110000
+
+float
+
+decimal point ==> 8.3456  ==> .------  ==> 0.000001  ==> 6 precision
+
+double ==> .123456789012345 ==> 15 precision
+
+long double ===> 19 precision
+
+char  ==> single character ==> 'A', '$', '1'  ==> ASCII
+
+A  ===>  65
+
+
+Escape sequence
+
+\  ==>  escape character
+\n ==> new line
+\t ==> one tab space
+\a ==> sound
+\b ==> backspace
+\r ==>  carriage return
+\' ==> print '
+\" ==> print "
+\\ ==> print \
+
+
+
+"Ram\\s"   ===> wello
+
+Format Specifier
+
+% ==> format specifier ==> variables, constant, expression
+
+%d ==> int variable ==> value
+%f ==> float
+%c ==> char
+%s ==> string
+%x ==> Hexadecimal
+%o ==> Octal
+%% ==> Print %
+
+Operators:
+
+                         A + B   => + ==> Operator
+				   A, B ==> Operands
+
+
+a+b ==> Binary Operator ==> two operands
+++ , -- ==> i++ ==> i = i+1 == unary Operators ==> 1 operands
+(?:) ==> ternary Operators ==> more than two operands
+
+Types: 
+
+1. Arithmetic Operators:
+
++ , -, *, /, %(modulo) ==> int
+
+
+7/2 ==> 3
+7%2 ==> 1
+
+2|7|3
+  6
+  1
+
+2. increment/Decrement Operator
+
+++, --
+
+i = 0;
+
+i++ ==> i = i + 1 ==>1
+i-- ==> i = i - 1 ==> -1
+
+Assignment ==> i++, ++i
+
+i++ ==> post increment
+++i ==> pre increment
+
+
+3. Assignment Operator
+
+=, +=, -=, *=, /=
+
+x = 2
+x += 3 ==> x = x+3
+
+4. relational Operator
+
+> , < ,>=,<= ,== ,!=(not equal to)
+
+Boolean (True/False)
+x = 5
+y = 6
+
+x>y ==>False
+x<y ==> T
+x>=y ==> x> y or x==y ==> True
+x<=y
+x == y
+x != y ==> T
+
+5. Logical Operators
+
+&&(and), ||(or) , !(not)
+
+a= 1
+b=2
+c=3
+
+(a>b) && (a>c)
+
+   F	   F		
+
+I1	I2	&&	||
+T	T	T	T
+T	F	F	T
+F	T	F	T
+F	F	F	F
+
+!T ==> False
+!F ==> True
+
+int x
+sizeof(x)
+
+,
+
+int x, y, z;
+
+bitwise ==> &, |, ^, >>, <<
+
+6. Conditional Operator
+
+				?:
+
+syntax:
+
+		(condition)?True Part:False Part;
+
+
+
+
+github.com/rowlptk/FOP-10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
