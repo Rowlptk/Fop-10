@@ -9,6 +9,8 @@ void main()
     scanf("%d",&day);
     switch(day)
     {
+        // loop, switch==> example using character as a case
+        // while, do.. while, for ==> patterns ==> nested for
     case 8:
     case 1:
         printf("Sunday");
