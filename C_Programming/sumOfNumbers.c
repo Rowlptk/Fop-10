@@ -18,3 +18,4 @@ void main()
     }
     printf("%d",sum);
 }
+
