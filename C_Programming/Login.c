@@ -1,5 +1,4 @@
 #include<stdio.h>
-
 void main()
 {
     char susr[20] = "admin";
