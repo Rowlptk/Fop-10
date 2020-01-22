@@ -4,7 +4,7 @@
 
 // structure & File ==> 2 days ==> Html ==> 3 days, css ==> 4 days, js ==> 6 days
 
-void login();
+void login(); // multi user login with 3 maximum attempts
 void menu(); // Assignment 2 parts break garnus
 void checkbalance();
 void withdraw();
