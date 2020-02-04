@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Css Selectors & colors</title>
+    <!-- fonts, backgrounds, borders, box-model, float,align, buttons, link,
+    navmenu, sidemenu, inline-block, position, form-styling, media-queries,
+    animation, transition -->
+    <style>
+    
+        /* Element Selector */
+        /* rgb ==> 0-255, rgba==> a is alpha==> opacity ==> 0 to 1*/
+        body {
+            background-color: rgb(100, 230, 20);
+        }
+
+        /* . is for classes */
+        /* 140 standard color names */
+        .primary-heading {
+            color: tomato;
+        }
+
+        /* # is for IDs */
+        /* Hex color ==> #rrggbb ==> 00 - ff*/
+        #welcome {
+            background-color : #f4f4f4;
+        }
+
+        /* Multiple Selector */
+        #welcome, #about {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+
+        /* Nested Selector */
+        #welcome p {
+            font-size: 20px;
+        }
+        
+        #about {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="welcome">
+        <h2 class="primary-heading">Welcome</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium nesciunt sunt, quidem modi libero inventore.</p>
+    </div>
+    <div id="about">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium nesciunt sunt, quidem modi libero inventore.</p>
+    </div>
+</body>
+</html>
