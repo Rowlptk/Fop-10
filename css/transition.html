@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Effect</title>
+    <style>
+        body {
+            background: #333;
+        }
+        .box {
+            background: #f4f4f4;
+            height: 40px;
+            width: 100px;
+            border: 1px solid yellow;
+            margin: 400px auto;
+            text-align: center;
+            padding-top: 10px;
+            box-sizing: border-box;
+            /*transition-duration: 20s;
+            transition-property: all;
+            transition-delay: 1s;
+            transition-timing-function: ease;
+
+             ease ==> slow, fast, slow
+             linear ==> same
+             ease-in ==> slow, linear
+             ease-out ==> linear slow
+             ease-in-out ==> slow, linear, slow
+             cubic Bezier*/
+             transition: 10s all 300ms ease;
+        }
+
+        .box:hover {
+            height: 80px ;
+            width: 200px;
+            font-size: 2em;
+            padding-top: 20px;
+            transform: rotateZ(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        hover
+    </div>
+</body>
+</html>

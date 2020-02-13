@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body {
+            background: #333;
+        }
+        .box {
+            background: #f4f4f4;
+            height: 40px;
+            width: 100px;
+            border: 1px solid red;
+            text-align: center;
+            padding-top: 10px;
+            box-sizing: border-box;
+            
+            position: relative;
+            animation-name: animate2;
+            animation-duration: 1000ms;
+            animation-iteration-count: infinite;
+            animation-direction:alternate;
+            animation-delay: 1s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes animate2 {
+            0% {
+                top: 0;
+                left: 0;
+                border-radius: 0px 0px 0px 0px;
+                background: white;
+            }
+            25% {
+                top: 300px;
+                left: 200px;
+                border-radius: 20px 0px 0px 0px;
+                background: red;
+               
+            }
+            50% {
+                top: 0px;
+                left: 400px;
+                border-radius: 20px 20px 0px 0px;
+                background: yellow;
+               
+            }
+            75% {
+                top: 300px;
+                left: 600px;
+                border-radius: 20px 20px 20px 0px;
+                background: green;
+            }
+            100% {
+                top: 0px;
+                left: 800px;
+                border-radius: 20px 20px 20px 20px;
+                background: blue;
+            }
+        }
+
+
+        @keyframes animate1 {
+            from {
+                left: 0;
+                top:0;
+            }
+            to {
+                left: 500px;
+                top: 500px;
+
+            }
+        }
+    </style>
+
+    <!-- /*display: flex, grid*/ -->
+</head>
+<body>
+    <div class="box">
+        hover
+    </div>
+</body>
+</html>
