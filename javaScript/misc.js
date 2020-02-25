@@ -7,6 +7,8 @@ birthday = new Date('9/10/1981');
 birthday = new Date(2020, 0, 1, 12, 00, 09, 999);
 birthday = new Date(-10000000000000);
 
+//1000*60*60*24*365
+
 
 val = today.getMonth() + 1 ;
 val = today.getDate() ;
@@ -31,6 +33,22 @@ else {
 }
 
 // forEach and for/in
+
+
+
+
+function demo()
+{
+    let x = new Date();
+    let now1 = x.toLocaleTimeString();
+    document.querySelector('h1').innerHTML = now1;
+}
+
+function load()
+{
+    setInterval(demo, 1000);
+}
+
 
 
 console.log(val);
