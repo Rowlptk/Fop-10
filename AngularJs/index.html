@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular JS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+   <input type="text" placeholder="Type Something... " ng-model="demo">
+   <h1 ng-bind="demo"></h1>
+   <h3>Hello my name is {{demo}} and I am {{age}}</h3>
+   <h3>Hello my name is {{demo}} and I am {{age}}</h3>
+   <h3>Hello my name is {{demo}} and I am {{age}}</h3>
+   <h3>Hello my name is {{demo}} and I am {{age}}</h3>
+   <h3>Hello my name is {{demo}} and I am {{age}}</h3>
+
+   <script>
+       let app = angular.module('myApp',[]);
+       app.controller('myCtrl',function($scope){
+           $scope.demo = 'Mango';
+           $scope.age = 107;
+       })
+   </script>
+</body>
+</html>

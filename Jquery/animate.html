@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Animate</title>
+</head>
+<body>
+    <button>Animate</button>
+    <hr>
+    <div style="background: red;height:100px;width:100px;border-radius:50%;position:relative;">
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        $(function(){
+            let count = 1;
+            $('button').click(function loop() {
+                $('div').animate({top:'0px',left:'0px'});
+                $('div').animate({top:'0px',left:'600px'},500);
+                $('div').animate({top:'400px',left:'600px'},500);
+                $('div').animate({top:'400px',left:'0px'},500);
+                $('div').animate({top:'0px',left:'0px'},500);
+                count++;
+                if(count<=3)
+                    loop();
+                else
+                    count=1;
+            })
+        })
+    </script>
+</body>
+</html>
