@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJS Directives</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+    <h1>{{str}}</h1>
+    <h1>{{str | uppercase}}</h1>
+    <h1>{{str | lowercase}}</h1>
+
+    <h1>{{money}}</h1>
+    <h1>{{money | currency}}</h1>
+    <h1>{{money*118.06 | currency:'NPR '}}</h1>
+    <h1>{{money*0.81 | currency:'&pound;'}}</h1>
+
+    <h1>{{today}}</h1>
+    <h1>{{today | date}}</h1>
+    <h1>{{today | date:'y-MM-d'}}</h1>
+    <h1>{{today | date:'shortDate'}}</h1>
+
+    <input type="text" ng-model="search" placeholder="Search...">
+    <ul>
+        <li ng-repeat="fruit in fruits | filter:search">{{fruit}}</li>
+    </ul>
+
+    <script>
+        let app = angular.module('myApp',[]);
+        app.controller('myCtrl',function($scope){
+           $scope.str = "Hello World";
+           $scope.money = 100;
+           $scope.today = new Date();
+           $scope.fruits = ['Apple','Mango','Orange','Banana','Grapes','Cherry','Guava','Pineapple','Papaya','Watermelon'];
+        })
+    </script>
+</body>
+</html>

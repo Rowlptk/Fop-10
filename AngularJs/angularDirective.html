@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJS Directives</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+    <!-- ng-include , ng-repeat -->
+    <hr>
+    <div ng-include="'welcome.html'" style="border: 1px solid red; text-align:center;">
+    </div>
+    <hr>
+    <div ng-include="'welcome.html'" style="border: 1px solid red; text-align:center;">
+    </div>
+    <hr>
+    <ul>
+        <li ng-repeat="fruit in fruits">I love {{fruit}}</li>
+    </ul>
+
+    <script>
+        let app = angular.module('myApp',[]);
+        app.controller('myCtrl',function($scope){
+            $scope.fruits = ['Apple','Mango','Orange','Banana','Grapes','Cherry','Guava','Pineapple','Papaya','Watermelon'];
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!-- $valid, $invalid, $touched, $untouched, $dirty, $pristine
+$error.key
+.ng-valid,... -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJS Form States</title>
+    <style>
+        input.ng-valid {
+            background: green;
+            color: yellow;
+        }
+        input.ng-invalid {
+            background: red;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+</head>
+<body ng-app="">
+    <form name="myForm" novalidate>
+        <input type="text" ng-model="in1" name="myIn" required placeholder="Type Something...">
+        <br>
+        <span>Valid: {{myForm.myIn.$valid}}</span> <br>
+        <span>InValid: {{myForm.myIn.$invalid}}</span> <br>
+        <span>Dirty: {{myForm.myIn.$dirty}}</span> <br>
+        <span>Pristine: {{myForm.myIn.$pristine}}</span> <br>
+        <span>Touched: {{myForm.myIn.$touched}}</span> <br>
+        <span>UnTouched: {{myForm.myIn.$untouched}}</span> <br>
+        <span>Error: {{myForm.myIn.$error.required}}</span> <br>
+        
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

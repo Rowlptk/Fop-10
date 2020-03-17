@@ -1,0 +1,50 @@
+<!-- $valid, $invalid, $touched, $untouched, $dirty, $pristine
+$error.key
+.ng-valid,... -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJS Form Validation</title>
+    <style>
+        span {
+            color: red;
+            font-size: 11px;
+        }
+    </style>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+</head>
+<body ng-app="">
+    <form name="myForm" novalidate>
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="myUsr" id="name" ng-model="myUsr" required>
+            <span ng-show="myForm.myUsr.$dirty && myForm.myUsr.$error.required">*Name is required</span>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="myEmail" id="email" ng-model="myEmail" required>
+            <span ng-show="myForm.myEmail.$dirty">
+                <span ng-show="myForm.myEmail.$error.required">*Email is required</span>
+                <span ng-show="myForm.myEmail.$error.email">*Email is invalid</span>
+            </span>
+        </div>
+        <br>
+        <input type="submit" value="Submit" ng-disabled="myForm.$invalid">
+    </form>
+</body>
+</html>
+
+angular-routing ==> SPA
+sql queries ==> sql server 2012/2014
+database create, tables, modify, data, update, view, delete, drop,
+millions select, sorting, grouping, joins, view, stored procedure,
+trigger, error handling ==> 3==> 10 ==> 9, 7, 3
+3 days ==> html website, bootstrap, problems
+
+
+
+
